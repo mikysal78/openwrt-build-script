@@ -8,7 +8,7 @@ spec:
   arguments:
     parameters:
     - name: gh-repo
-      value: aarnaud/openwrt-build-script
+      value: mikysal78/openwrt-build-script
     - name: git-ref
       value: master
     - name: targets
@@ -156,7 +156,7 @@ spec:
       fsGroup: 1000
       fsGroupChangePolicy: "OnRootMismatch"
     container:
-      image: ghcr.io/aarnaud/openwrt-builder:latest
+      image: ghcr.io/mikysal78/openwrt-builder:latest
       command: ["/bin/bash", "-c"]
       args:
         - |
@@ -214,7 +214,7 @@ spec:
       fsGroup: 1000
       fsGroupChangePolicy: "OnRootMismatch"
     container:
-      image: ghcr.io/aarnaud/openwrt-builder:latest
+      image: ghcr.io/mikysal78/openwrt-builder:latest
       command: ["/bin/bash", "-c"]
       args:
         - |
